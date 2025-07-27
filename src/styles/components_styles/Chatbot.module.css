@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+.chatbotContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  font-family: "Quicksand", sans-serif;
+}
+
+.chatIcon {
+  background-color: #8a2be2; /* A more vibrant purple */
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.chatIcon:hover {
+  transform: scale(1.1);
+  background-color: #9932cc; /* Darker purple on hover */
+}
+
+.chatWindow {
+  position: absolute;
+  bottom: 80px; /* Position above the icon */
+  right: 0;
+  width: 350px;
+  max-height: 500px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.chatHeader {
+  background: linear-gradient(to right, #8a2be2, #4b0082); /* Gradient header */
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatHeader h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.chatHeader button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.chatBody {
+  padding: 15px;
+  overflow-y: auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  padding: 10px 15px;
+  border-radius: 18px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.bot {
+  background-color: #e5e5ea;
+  color: #000;
+  align-self: flex-start;
+}
+
+.user {
+  background-color: #8a2be2;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.chatFooter {
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.questions button,
+.chatFooter button {
+  background-color: #8a2be2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.questions button:hover,
+.chatFooter button:hover {
+  background-color: #9932cc;
+}

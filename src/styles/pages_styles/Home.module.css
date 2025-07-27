@@ -1,0 +1,372 @@
+.home {
+  /* background: linear-gradient(135deg, #a78bfa 0%, #f472b6 100%); */
+  width: 100%;
+}
+
+.hero {
+  /* background: linear-gradient(135deg, #a78bfa 0%, #f472b6 100%); */
+  color: #ffffff;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.heroContent {
+  width: 50%;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: #e5e7eb;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 1.2s ease-out 0.2s;
+}
+
+.heroCta {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #2563eb;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.heroCta:hover {
+  background-color: #e5e7eb;
+  transform: scale(1.1);
+}
+
+.heroImage {
+  width: 50%;
+  padding: 0 1rem;
+}
+
+.heroImage img {
+  border-radius: 20px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.productSection {
+  padding: 2rem 0;
+  color: #ffffff;
+  min-height: 300px;
+  position: relative;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+}
+
+.product1 {
+  background: linear-gradient(135deg, #6366f1 0%, #818cf8 100%);
+}
+
+.product2 {
+  background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+}
+
+.product3 {
+  background: linear-gradient(135deg, #6366f1 0%, #818cf8 100%);
+}
+
+.product4 {
+  background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+}
+
+.productContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productContent {
+  width: 50%;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+.productTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.productDescription {
+  font-size: 1rem;
+  color: #e5e7eb;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  animation: fadeIn 1.2s ease-out 0.2s;
+}
+
+.productCta {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #2563eb;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.productCta:hover {
+  background-color: #e5e7eb;
+  transform: scale(1.05);
+}
+
+.productImage {
+  width: 50%;
+  padding: 0 1rem;
+}
+
+.productImage img {
+  border-radius: 20px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.quotes {
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.quoteSlider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.quoteTrack {
+  display: flex;
+  animation: slide 20s linear infinite;
+}
+
+.quoteSlider:hover .quoteTrack {
+  animation-play-state: paused;
+}
+
+.quoteCard {
+  cursor: pointer;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 350px;
+  height: 180px;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quoteCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.quoteText {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.quoteAuthor {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.cta {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: #ffffff;
+  text-align: center;
+  border-radius: 0;
+  padding: 2rem 1rem;
+}
+
+.ctaTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #2563eb;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #e5e7eb;
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero,
+  .productContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroContent,
+  .productContent {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .heroImage,
+  .productImage {
+    width: 80%;
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .quoteCard {
+    width: 300px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .productSection,
+  .quotes,
+  .cta {
+    padding: 2rem 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .heroTitle,
+  .productTitle {
+    font-size: 1.75rem;
+  }
+
+  .heroSubtitle,
+  .productDescription {
+    font-size: 0.875rem;
+  }
+
+  .heroCta,
+  .productCta,
+  .ctaButton {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .quoteCard {
+    width: 250px;
+    height: 160px;
+  }
+
+  .quoteText {
+    font-size: 1rem;
+  }
+
+  .quoteAuthor {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero,
+  .productSection,
+  .quotes,
+  .cta {
+    padding: 1.5rem 0;
+    margin-bottom: 1rem;
+  }
+
+  .heroTitle,
+  .productTitle {
+    font-size: 1.5rem;
+  }
+
+  .heroSubtitle,
+  .productDescription {
+    font-size: 0.75rem;
+  }
+
+  .heroImage,
+  .productImage {
+    width: 100%;
+  }
+
+  .quoteCard {
+    width: 200px;
+    height: 140px;
+  }
+
+  .quoteText {
+    font-size: 0.875rem;
+  }
+
+  .quoteAuthor {
+    font-size: 0.75rem;
+  }
+}

@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+.footer {
+  background-color: #1f2937;
+  /* background: linear-gradient(135deg, #7a52f3 0%, #fd58ad 100%); */
+  color: #ffffff;
+  padding: 2rem 0;
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.logoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+.logoIcon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.tagline {
+  font-size: 0.875rem;
+  color: #d1d5db;
+  margin-top: 0.5rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+.navSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+.footerLink {
+  color: #d1d5db;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: "Quicksand", sans-serif;
+}
+
+.footerLink:hover {
+  color: #a78bfa;
+}
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contactInfo {
+  font-size: 0.875rem;
+  color: #d1d5db;
+  font-family: "Quicksand", sans-serif;
+}
+
+.socialSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLink {
+  color: #d1d5db;
+  text-decoration: none;
+}
+
+.socialIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.socialLink:hover .socialIcon {
+  color: #a78bfa;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: #d1d5db;
+  border-top: 1px solid #374151;
+  padding-top: 1rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .footerContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .footerContent {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+
+  .sectionTitle {
+    font-size: 1rem;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .logoIcon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
