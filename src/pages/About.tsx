@@ -106,7 +106,7 @@ const About = () => {
         <div className="hero-content animate-on-scroll">
           <div className="hero-text">
             <h1>
-              About <span className="highlight">Neura AI</span>
+              About <span className="highlight">Neuraa AI</span>
             </h1>
             <h2>Transforming E-commerce with AI Innovation</h2>
             <p>

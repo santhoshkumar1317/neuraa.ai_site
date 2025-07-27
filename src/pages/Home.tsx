@@ -102,7 +102,7 @@ const Home = () => {
         <div className="hero-content animate-on-scroll">
           <div className="hero-text">
             <h1>
-              Welcome to <span className="highlight">Neura AI</span>
+              Welcome to <span className="highlight">Neuraa AI</span>
             </h1>
             <h2>AI Visual Solution Platform</h2>
             <p>
